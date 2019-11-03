@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Conversion</title>
+        <link rel="stylesheet" href="convert.css">
+    </head>
+
+    <body>
+        <script src="./convert.js"></script>
+        <div class="container">
+          <h1>Conversion</h1>
+
+          <div class="column-left">
+            <div class="header">
+              Convert from decimal to binary
+            </div>
+            <div class="input-box input_box_decimal">
+              <p class="no_break label">Decimal:</p><input type="text" class="input_value" id="input_decimal" placeholder="Type the number ...">
+            </div>
+            <div class="input-box input_box_binary">  
+                <p class="no_break label">Binary:</p><input type="text" class="input_value" id="result_binary" readonly>
+            </div>
+            <div class="btn_box">
+              <button class="btn" onclick="Decimal2Binary()">Convert</button>
+            </div>  
+          </div>
+
+          <div class="column-right">
+            <div class="header">
+                Convert from binary to decimal
+            </div>                
+            <div class="input-box input_box_binary">
+                <p class="no_break label">Binary:</p><input type="text" class="input_value" id="input_binary" placeholder="Type the number ...">
+            </div>
+            <div class="input-box input_box_decimal">  
+                <p class="no_break label">Decimal:</p><input type="text" class="input_value" id="result_decimal" readonly>
+            </div>
+            <div class="btn_box">
+              <button class="btn" onclick="Binary2Decimal()">Convert</button>
+            </div>  
+          </div>
+        </div>
+    </body>
+</html>
